@@ -30,6 +30,9 @@ Check out the live version here.
 
 📂 Getting Started:
 Clone the repository and follow these steps:
+
 npm install
+
 npm run dev
+
 Visit http://localhost:5173 to explore the project.
