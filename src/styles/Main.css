@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Add padding for fixed navbar */
+    padding-top: 72px; /* Adjust this value based on your navbar height */
+    min-height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: rgb(231, 221, 221);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+/* Container spacing */
+.container {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+/* Page specific spacing */
+.home-container,
+.products-container,
+.cart-container,
+.checkout-container {
+    padding-top: 1rem;
+}
+
+/* Card and hover effects */
+.category-card {
+    transition: transform 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Alert animation */
+.alert {
+    animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-top: 66px; /* Smaller padding for mobile */
+    }
+    
+    .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Fix for navbar button alignment */
+.navbar .btn {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Fix for navbar links spacing */
+.nav-link {
+    padding: 0.5rem 1rem !important;
+}
+
